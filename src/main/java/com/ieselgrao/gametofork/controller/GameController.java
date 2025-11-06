@@ -30,7 +30,7 @@ public class GameController {
     private final double MIN_RADIUS = 10;
     private final double MAX_RADIUS = 30;
     private final double FALL_SPEED = 1;
-    private final double LOST_LINE_Y = 550; // Línea cerca del pie de la ventana (600px)
+    private final double LOST_LINE_Y = 500; // Línea cerca del pie de la ventana (600px)
 
     @FXML
     public void initialize() {
@@ -41,10 +41,13 @@ public class GameController {
         livesLabel.textProperty().bind(model.livesProperty().asString("Vidas: %d"));
 
         // Dibuja la línea roja de pérdida de vida
-        Line lossLine = new Line(0, LOST_LINE_Y, gamePane.getWidth(), LOST_LINE_Y);
-        lossLine.setStroke(Color.RED);
-        lossLine.setStrokeWidth(2);
-        gamePane.getChildren().add(lossLine);
+        gamePane.widthProperty().addListener((obs, oldVal, newVal) -> {
+            Line lossLine = new Line(0, LOST_LINE_Y, newVal.doubleValue(), LOST_LINE_Y);
+            lossLine.setStroke(Color.PINK);
+            lossLine.setStrokeWidth(2);
+            gamePane.getChildren().add(lossLine);
+        });
+
 
         // Inicia el ciclo del juego
         startGameLoop();
