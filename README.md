@@ -26,13 +26,14 @@ Estas son las mejoras que he implementado en el juego:
 - En el menú, selecciona "Abrir proyecto existente".
 - Introduce la ruta local del repositorio que clonaste.
 
+
 ![Modificaciones intelliJ](./img/intelliJ1_0.png)  
-![[Modificaciones intelliJ](./img/intelliJ1_1.png)  
-![[Modificaciones intelliJ](./img/intelliJ1_2.png)  
-![[Modificaciones intelliJ](./img/intelliJ1_6.png)  
-![[Modificaciones intelliJ](./img/intelliJ1_3.png)  
-![[Modificaciones intelliJ](./img/juegomodif.png)  
-![[Modificaciones intelliJ](./img/intelliJ1_5.png)
+![Modificaciones intelliJ](./img/intelliJ1_1.png)  
+![Modificaciones intelliJ](./img/intelliJ1_2.png)  
+![Modificaciones intelliJ](./img/intelliJ1_6.png)  
+![Modificaciones intelliJ](./img/intelliJ1_3.png)  
+![Modificaciones intelliJ](./img/juegomodif.png)  
+![Modificaciones intelliJ](./img/intelliJ1_5.png)
 
 
 private final double LOST_LINE_Y = 500; 
