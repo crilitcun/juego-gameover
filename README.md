@@ -26,6 +26,7 @@ Estas son las mejoras que he implementado en el juego:
 - En el menú, selecciona "Abrir proyecto existente".
 - Introduce la ruta local del repositorio que clonaste.
 
+
 ![Modificaciones intelliJ](./img/intelliJ1_0.png)  
 ![[Modificaciones intelliJ](./img/intelliJ1_1.png)  
 ![[Modificaciones intelliJ](./img/intelliJ1_2.png)  
